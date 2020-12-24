@@ -7,6 +7,8 @@ new Vue({
         age: 28,
         x: 0,
         y: 0,
+        a: 0,
+        b: 0,
     },
     methods: {
 		greet: function(time){
@@ -32,5 +34,23 @@ new Vue({
         logAge: function(){
             console.log('You entered your age');
         },
-    }
+        /*addToA: function(){
+            console.log('I ran');
+            return this.age + this.a;
+        },
+        addToB: function(){
+            console.log('I ran');
+            return this.age + this.b;
+        },*/
+    },
+    computed: {
+        addToA: function(){
+            console.log('A ran');
+            return this.age + this.a;
+        },
+        addToB: function(){
+            console.log('B ran');
+            return this.age + this.b;
+        },
+    },
 });
