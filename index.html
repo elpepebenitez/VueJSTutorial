@@ -8,10 +8,30 @@
     </head>
     <body>
         <div id="vue-app">
-            <h1> {{ greet('afternoon') }} </h1>
+
+            <h3>Vue Instance, data and methods</h3>
+            <h4>Calling and function and passing an atribbute:</h4>
+            <p> {{ greet('afternoon') }} </p>
+
+            <h4>Outputting data via the instance:</h4>
             <p> Name: {{ name }}</p>
+
+            <h3>Data Binding</h3>
+            
+            <h4>Data Binding with v-bin:</h4>
             <a v-bind:href="website">Some Website</a>
+            <h4>Data Binding with v-html:</h4>
             <p v-html="websiteTag"></p>
+
+            <h3>Events</h3>
+
+            <h4>Using v-on to listen to an event</h4>
+            <p>My age is {{age}}</p>
+            <button v-on:click="add">Add a year</button>
+            <button v-on:click="subtract">Substract a year</button>
+            
+            <p>Listening to mouse mouvement</p>
+            <div id="canvas" v-on:mousemove="updateXY"> {{x}}, {{y}} </div>
         </div>
 
 
