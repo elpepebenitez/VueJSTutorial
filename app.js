@@ -32,6 +32,5 @@ new Vue({
         logAge: function(){
             console.log('You entered your age');
         },
-	}
-
+    }
 });
