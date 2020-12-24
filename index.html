@@ -46,6 +46,16 @@
             <label>Age</label>
             <input type="text" v-on:keyup.alt.enter="logAge">
 
+            <h3>2-Way Data Binding</h3>
+
+            <h4>Whatever you type is updating the name and age variables, and outputs them again</h4>
+
+            <label>Name</label>
+            <input type="text" v-model="name" >
+            <span>{{name}}</span>
+            <label>Age</label>
+            <input type="text" v-model="age" >
+            <span>{{age}}</span>
 
         </div>
 
