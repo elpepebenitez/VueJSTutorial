@@ -2,5 +2,5 @@
 
 Following The Net Ninja Vue JS 2 Tutorial
 
-Link: https://www.notion.so/Vue-b0c793b41be6421a88f6396ab8c44d66#0df410ad655f45fdb58f29593c4c3994
+Link: https://www.youtube.com/watch?v=5LYrN_cAJoA&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa
 
