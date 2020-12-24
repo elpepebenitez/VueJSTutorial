@@ -32,10 +32,21 @@
             <button v-on:click="subtract">Substract a year</button>
 
             <p>With event modifier, we are preventing the link to open</p>
-            <a v-on:click.prevent="click" href="http://www.google.com"> Some website</a>
+            <a v-on:click.prevent="click" href="http://www.google.com"> Try to open this</a>
             
             <p>Listening to mouse mouvement</p>
             <div id="canvas" v-on:mousemove="updateXY"> {{x}}, {{y}} </div>
+
+            <h3>Keyboard Events</h3>
+
+            <p>Triggering an action after you press a specific key (enter), using a modifier</p>
+            <label>Name</label>
+            <input type="text" v-on:keyup.enter="logName">
+            <p>Triggering an action after you press a specific combination of keys (alt+enter), using a chain of modifiers</p>
+            <label>Age</label>
+            <input type="text" v-on:keyup.alt.enter="logAge">
+
+
         </div>
 
 
