@@ -27,8 +27,12 @@
 
             <h4>Using v-on to listen to an event</h4>
             <p>My age is {{age}}</p>
-            <button v-on:click="add">Add a year</button>
+            <p>With event modifier, you can only add a year it once</p>
+            <button v-on:click.once="add">Add a year</button>
             <button v-on:click="subtract">Substract a year</button>
+
+            <p>With event modifier, we are preventing the link to open</p>
+            <a v-on:click.prevent="click" href="http://www.google.com"> Some website</a>
             
             <p>Listening to mouse mouvement</p>
             <div id="canvas" v-on:mousemove="updateXY"> {{x}}, {{y}} </div>
