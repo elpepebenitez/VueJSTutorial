@@ -109,10 +109,13 @@ two.title = 'Changed from outside of the instance'
 var three = new Vue ({
 	el: '#vue-app-three',
 	data: {
-		
+        output: 'Your fav food',
     },
 	methods: {
-
+        readRefs: function(){
+            console.log(this.$refs);
+            this.output = this.$refs.input.value;
+        },
 	},
 	computed: {
 		
