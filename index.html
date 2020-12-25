@@ -66,6 +66,18 @@
             <p>Age + A = {{ addToA }}</p>
             <p>Age + B = {{ addToB }}</p>
 
+            <h3>Dynamic CSS</h3>
+            <p>Dynamically change the class by using data binding, when you click on it</p>
+            <div v-on:click="available = !available" v-bind:class="{available: available}">
+                <span>Peps</span>
+            </div>
+
+            <p>Dynamically change the class by using data binding, when you click on it, but now it is passing an object from a method in computed properties</p>
+            <div v-bind:class="compClasses" >
+                <span>Pepo</span>
+            </div>
+            <button v-on:click="nearby = !nearby">Toggle nearby</button>
+            <button v-on:click="available = !available">Toggle available</button>
         </div>
 
 
