@@ -136,6 +136,14 @@
             <h3>Vue App three</h3>
             <h4>This is a component:</h4>
             <greeting></greeting>
+
+            <h3>Referencing with $refs</h3>
+            <input type="text" ref="input">
+            <button v-on:click="readRefs">Submit</button>
+            <p>Your fav food: {{output}}</p>
+
+            <p>This is a new ref from which we can access data:</p>
+            <div ref="test">Hello</div>
         </div>
 
         <script src="app.js"></script>
