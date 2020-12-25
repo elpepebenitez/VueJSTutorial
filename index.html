@@ -78,6 +78,22 @@
             </div>
             <button v-on:click="nearby = !nearby">Toggle nearby</button>
             <button v-on:click="available = !available">Toggle available</button>
+
+            <h3>Conditionals</h3>
+
+            <h4>Using v-if and v-else-if</h4>
+            <p v-if="error">There has been an error</p>
+            <p v-else-if="success">You have been successful</p>
+
+            <h4>Using v-show</h4>
+            <p v-show="error"> There has been an error </p>
+            <p v-show="success"> Whoooo, success </p>
+
+            <button v-on:click="error = !error">Toggle Error</button>
+            <button v-on:click="success = !success">Toggle Success</button>
+
+            
+
         </div>
 
 
