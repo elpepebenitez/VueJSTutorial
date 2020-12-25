@@ -112,8 +112,20 @@
                     <p>{{key}}: {{val}}</p>
                 </div>
             </template>
+
+            <h3>Multiple Vue Instances</h3>
+
+            <p>This is the title for app one:</p>
+            <p>{{ title }}</p>
+
         </div>
 
+        <div id="vue-app-two">
+            <p>A second vue instance in controlling this:</p>
+            <h4>Title: {{ title }}</h4>
+            <p>{{ greet }}</p>
+            <button v-on:click="changeTitle"> Change App One title</button>
+        </div>
 
         <script src="app.js"></script>
     </body>

@@ -1,4 +1,4 @@
-new Vue({
+var one = new Vue({
     el: '#vue-app',
     data: {
         name: 'Pepe',
@@ -19,6 +19,7 @@ new Vue({
             {name: 'Yoshi', age: 35},
             {name: 'Ken', age: 55}
         ],
+        title: 'App One Title',
     },
     methods: {
 		greet: function(time){
@@ -67,6 +68,26 @@ new Vue({
                 available: this.available,
                 nearby: this.nearby
             };
-        }
+        },
     },
 });
+
+var two = new Vue({
+    el: '#vue-app-two',
+    data: {
+        title: 'Vue App Two', 
+    },
+    methods: {
+        changeTitle: function(){
+            one.title = "Title changed";
+        },
+    },
+    computed: {
+        greet: function(){
+            return 'Hello from app two';
+        },
+
+    }
+});
+
+two.title = 'Changed from outside of the instance'
