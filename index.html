@@ -92,8 +92,26 @@
             <button v-on:click="error = !error">Toggle Error</button>
             <button v-on:click="success = !success">Toggle Success</button>
 
-            
-
+            <h3>Looping</h3>
+            <p>Looping through a list with v-for</p>
+            <ul>
+                <li v-for="character in characters">{{character}}</li>
+            </ul>
+            <p>Accesing the index of an element in a list</p>
+            <ul>
+                <li v-for="(ninja, index) in ninjas">{{index}}. {{ninja.name}}</li>
+            </ul>
+            <p>Using a template tag to not repeat code in our markup</p>
+            <template v-for="(ninja, index) in ninjas">
+                <h3>{{index}}. {{ninja.name}}</h3>
+                <p>Age: {{ninja.age}}</p>
+            </template>
+            <p>Looping through key-value pairs in an object</p>
+            <template v-for="ninja in ninjas">
+                <div v-for="(val, key) in ninja">
+                    <p>{{key}}: {{val}}</p>
+                </div>
+            </template>
         </div>
 
 
